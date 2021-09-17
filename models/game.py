@@ -1,20 +1,25 @@
 class Game:
 
-    def __init__(self, player_choice, computer_choice):
-        self.player_choice = player_choice
-        self.computer_choice = computer_choice
+    def __init__(self):
+        pass
 
 
-    def determine_game(self, player_choice, computer_choice):
-        if player_choice == computer_choice:
+    def determine_game(self, player_1, player_2):
+        if player_1.choice == player_2.choice:
             winner = None
         else:
-            choice = [player_choice, computer_choice]
+            choice = [player_1.choice, player_2.choice]
             if choice == ["rock", "paper"]:
-                winner = "paper"
+                winner = player_2
             elif choice ==["rock", "scissors"]:   
-                winner = "rock"
+                winner = player_1
             elif choice == ["paper", "scissors"]:
-                winner = "scissors" 
+                winner = player_2 
+            elif choice == ["paper", "rock"]:
+                winner = player_2
+            elif choice == ["scissors", "rock"]:
+                winner = player_2
+            elif choice == ["scissors", "paper"]:
+                winner = player_1
         return winner
         
