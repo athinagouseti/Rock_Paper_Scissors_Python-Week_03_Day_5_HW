@@ -1,3 +1,4 @@
+from random import choice 
 class Game:
 
     def __init__(self):
@@ -22,4 +23,9 @@ class Game:
             elif choice == ["scissors", "paper"]:
                 winner = player_1
         return winner
+
+    def make_computer_selection(self):
+        computer_choice = choice(["rock", "paper", "scissors"])
+        return computer_choice
+    
         
