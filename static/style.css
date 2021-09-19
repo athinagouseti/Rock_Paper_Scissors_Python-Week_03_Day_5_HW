@@ -1,0 +1,155 @@
+body {
+    background-color: #2E294E;
+    color: white;
+    justify-content: center;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container_middle {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    border: 2px solid #8661C1;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#container_left {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    margin-top: 40px;
+}
+
+#container_right {
+    flex: 1;
+}
+
+
+#navbar > ul {
+    list-style: none;
+    border: 2px solid #8661C1;
+    border-radius: 10px;
+    margin-right: 50px;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navbar > ul > li {
+    padding: 12px;
+
+}
+
+#navbar > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar > ul > li > a:visited {
+    color: white;
+}
+
+#navbar > ul > li:hover {
+    padding: 12px;
+    background-color: #BE97C6;
+}
+
+#title {
+    background-color: #8661C1;
+    display: flex;
+    justify-content: center;
+}
+
+#results_content {
+    padding: 50px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.player {
+    border: 2px solid #EFBCD5;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 1;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+#players {
+    display: flex;
+}
+
+.player_name {
+    background-color: #EFBCD5;
+    display: flex;
+    justify-content: center;
+    color: #2E294E;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.player_choice {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#winner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#winner > h3 {
+    font-size: 30px;
+}
+
+#winner > p {
+    font-size: 18px;
+}
+
+#play_title {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+#how_to > li {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > * {
+    margin-bottom: 10px;
+}
+
+#button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #BE97C6;
+    border-radius: 10px;
+    border: none;
+}
+
+#button:hover {
+    background-color: #EFBCD5;
+}
+
+.inputs {
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}

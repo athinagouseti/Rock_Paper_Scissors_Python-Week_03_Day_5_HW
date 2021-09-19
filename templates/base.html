@@ -1,8 +1,12 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 <html>
     <head>
         <title> {{ title }} - Rock, Paper, Scissors</title>
     </head>
     <body>
+        
+        <div id="container_left"> 
         <nav id="navbar">
             <ul>
                 <li>
@@ -13,8 +17,20 @@
                 </li>
             </ul>
         </nav>
-        {% block content %}
+        </div>
+        <div id="container_middle">
+            <div id="title">
+                <h1>
+                    Rock Paper Scissors
+                </h1>
+            </div>
+            <div id="results_content">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+        <div id="container_right">
 
-        {% endblock %}
+        </div>
     </body>
 </html>

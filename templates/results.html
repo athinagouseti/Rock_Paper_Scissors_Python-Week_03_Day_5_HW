@@ -1,48 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1>
-    Rock Paper Scissors
-</h1>
-<h4>
-    Good luck!
-</h4>
+<div id="players">
+    <div class="player">
+        <div class="player_name">
+            {{player_1.name}}
+        </div>
+        <div class="player_choice">
+            {{ player_1.choice }}
+        </div>
+    </div>
 
-<p>
-    {{player_1.name}}:
-    {{ player_1.choice }}
-</p>
-
-<p>
-    {{player_2.name}}:
-    {{ player_2.choice }}
-</p>
-
-<!-- <h3>
-    Make your choice!
-</h3>
-
-<p>
-    Rock
-</p>
-
-<p> 
-    Paper
-</p>
-
-<p>
-    Scissors
-</p> -->
-<h3>
-    Winner:
-</h3>
-<p>
-    {% if winner == None %}
-    Draw
-    {% else %}
-    {{ winner.name }}
-    {% endif %}
-</p>
-
-
+    <div class="player"> 
+        <div class="player_name">
+            {{player_2.name}}
+        </div>
+        <div class="player_choice">
+            {{ player_2.choice }}
+        </div>
+    </div>
+</div>
+<div id="winner"> 
+    <h3>
+        Winner
+    </h3>
+    <p>
+        {% if winner == None %}
+        Draw
+        {% else %}
+        {{ winner.name }}
+        {% endif %}
+    </p>
+</div>   
 {% endblock %}
