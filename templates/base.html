@@ -3,15 +3,8 @@
         <title> {{ title }} - Rock, Paper, Scissors</title>
     </head>
     <body>
-        <h1>Make your choice!</h1>
+        {% block content %}
 
-        <div>
-            <p>
-                {{ player.name }}
-            </p>
-            <p>
-                {{ player.choice }}
-            </p>
-        </div>
+        {% endblock %}
     </body>
 </html>

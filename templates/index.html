@@ -1,16 +1,51 @@
-<html>
-    <head> 
-        <title>{{ title }} - Rock Paper Scissors</title>
-    </head>
-    <body>
-        <h1>Classic Game of Rock Paper Scissors</h1>
-        <div>
-            <a href="/rps">Rock Paper Scissors</a>
-        </div>
-    </body>
-    <footer>
-        <p>
-            Thank you for playing, give it another go!
-        </p>
-    </footer>
-</html>
+{% extends "base.html" %}
+{% block content %}
+
+<h1>
+    Rock Paper Scissors
+</h1>
+<h2>
+    Give it a go!
+</h2>
+<h4>
+    Good luck!
+</h4>
+
+<p>
+    Player 1:
+    {{ player_1.choice }}
+</p>
+
+<p>
+    Player 2:
+    {{ player_2.choice }}
+</p>
+
+<!-- <h3>
+    Make your choice!
+</h3>
+
+<p>
+    Rock
+</p>
+
+<p> 
+    Paper
+</p>
+
+<p>
+    Scissors
+</p> -->
+<h3>
+    Winner:
+</h3>
+<p>
+    {% if winner == None %}
+    Draw
+    {% else %}
+    {{ winner.name }}
+    {% endif %}
+</p>
+
+
+{% endblock %}

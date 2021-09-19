@@ -13,4 +13,6 @@ def two_player_game_route_handler(player_1_selection, player_2_selection):
     player_1 = Player("Player 1", player_1_selection)
     player_2 = Player("Player 2", player_2_selection)
     winner = game.determine_game(player_1, player_2) 
-    return f"Player 1 choice is {player_1_selection} and Player 2 choice is {player_2_selection}, the winner is {winner.name}"
+    # return f"Player 1 choice is {player_1_selection} and Player 2 choice is {player_2_selection}, the winner is {winner.name}"
+    return render_template("index.html", title = "Home", winner = winner, player_1 = player_1, player_2 = player_2)
+
